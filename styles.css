@@ -1,0 +1,167 @@
+@font-face{
+    font-family: "Norse Bold";
+    src: url('asset/fonts/Norse-Bold.otf');
+}
+
+:root{
+    --bg: #F9FAFB;
+    --btn: #596D48;
+    --in: #E5E7EB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.container{
+    display: flex;
+    
+}
+
+.left{
+    background-position: center center;
+    background-image: url('asset/img/halie-west-25xggax4bSA-unsplash.jpg');
+    flex: 3;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.left > .logo{
+    font-family: "Norse Bold", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    margin-top: 120px;
+    font-size: 50px;
+    height: 3em;
+    
+}
+
+
+.logo > img{
+    height: 120px;
+    width: 100px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2;
+}
+
+
+
+.right{
+    height: 100vh;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    
+    background-color: var(--bg);
+}
+
+.right p {
+    max-width: 65%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.quote{
+    flex: 1;
+    padding: 80px;
+}
+
+.form{
+    flex: 3;
+}
+
+form > .mid{
+    background-color: white;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .contact, .password{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name > div, .contact > div, .password > div{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 15px;
+    margin-right: 40px;
+}
+
+label {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+input {
+    border: 1px solid var(--in);
+    border-radius: 4px;
+    width: 280px;
+    height: 30px;
+    outline: none;
+}
+
+.bot{
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button {
+    border: none;
+    background-color: var(--btn);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2em;
+    width: 240px;
+    height: 50px;
+}
+
+span {
+    font-weight: 500;
+}
+
+span > a{
+    text-decoration: none;
+    color: var(--btn);
+    font-weight: 700;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 2px 2px 4px rgba(0,0,255,.5);
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+#err{
+    color: red;
+}
