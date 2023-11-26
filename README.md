@@ -1,3 +1,3 @@
 # sign-up
 
-[gamaungsan.github.io/sign-up/]
+Link[gamaungsan.github.io/sign-up/]
